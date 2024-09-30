@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    padding: 10%;
+    margin: auto;
+    text-align: center;
+}
+
+.titulo {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(164, 130, 44);
+    font-size: 4em;
+    margin-top: 0px;
+}
+
+.subtitulo {
+    font-family: "Gentium Plus", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(243, 207, 116);
+}
+
+.info {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #e1d8a7;
+    font-size: 1em;
+}
+#login, #acc{
+    background-color: rgb(199, 172, 63);
+    padding: 20px;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+button{
+ /* margin-top: 20px; */
+ align-items: center;
+ padding: 10px 20px;
+ background-color: #b1a266;
+ color: aliceblue;
+ border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover{
+    background-color: #70622c;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    margin-top: 10px;
+}

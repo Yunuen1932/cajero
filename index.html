@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldenExpress</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<header>
+    <h1 class="titulo">GoldenExpress</h1>
+</header>
+
+<body>
+
+    <div id="login">
+        <label for="cuenta">Selecciona tu cuenta</label>
+        <select id="cuenta">
+            <option value="0">Mali_934</option>
+            <option value="1">Gera_257</option>
+            <option value="2">Maui_953</option>
+        </select>
+        <br>
+        <label for="passwords">Ingresa tu contraseña: </label>
+        <input type="password" id="password">
+        <button id="loginButton">Iniciar sesion</button>
+        <p class="info" id="loginMessage" style="color: black;"></p>
+
+    </div>
+
+    <div id="acciones" style="display: none;">
+        <p style="color: rgb(202, 184, 94);">Bienvenido a GoldenExpress, <span id="userName" style="color: rgb(202, 184, 94);"></span></p>
+        <button id="saldoButton">Consultar Saldo</button>
+        <button id="ingresarButton">Ingresar Monto</button>
+        <button id="retirarButton">Retirar Monto</button>
+        <p class="info" id="message"></p>
+
+        <div id="ingresarMonto" style="display: none;">
+            <label for="montoIngresar" style="color: rgb(212, 194, 79);">Monto a ingresar: </label>
+            <input type="number" id="montoIngresar">
+            <button id="ingresarMonto">Confirmar Ingreso</button>
+            <p class="info" id="message"></p>
+            
+        </div>
+        <div id="retirarMonto" style="display: none;">
+            <label for="retirarMonto">Monto a retirar: </label>
+            <input type="number" id="retirarMonto">
+            <button id="confirmarRetiro">Confirmar Retiro</button>
+            <p class="info" id="message"></p>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
