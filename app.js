@@ -37,7 +37,7 @@ document.getElementById('ingresarButton').addEventListener('click', function () 
     document.getElementById('retirarMonto').style.display = 'none';
 });
 
-document.getElementById('confirmarIngreso').addEventListener('click', function () {
+document.getElementById('ingresarMonto').addEventListener('click', function () {
     var montoIngresar = parseFloat(document.getElementById('montoIngresar').value);
     var saldoActual = cuentas[cuentaSeleccionada].saldo;
 
