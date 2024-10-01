@@ -37,15 +37,15 @@ document.getElementById('ingresarButton').addEventListener('click', function () 
     document.getElementById('retirarMonto').style.display = 'none';
 });
 
-document.getElementById('ingresarMonto').addEventListener('click', function () {
+document.getElementById('ingresarMontoButton').addEventListener('click', function () {
     var montoIngresar = parseFloat(document.getElementById('montoIngresar').value);
     var saldoActual = cuentas[cuentaSeleccionada].saldo;
 
     if (saldoActual + montoIngresar <= 990) {
         cuentas[cuentaSeleccionada].saldo += montoIngresar;
-        document.getElementById('message').innerText = 'Ingresaste $' + montoIngresar + '. Tu saldo actual es: $' + cuentas[cuentaSeleccionada].saldo;
+        document.getElementById('messageIngreso').innerText = 'Ingresaste $' + montoIngresar + '. Tu saldo actual es: $' + cuentas[cuentaSeleccionada].saldo;
     } else {
-        document.getElementById('message').innerText = 'No puedes tener más de $990 en tu cuenta.';
+        document.getElementById('messageIngreso').innerText = 'No puedes tener más de $990 en tu cuenta.';
     }
     document.getElementById('ingresarMonto').style.display = 'none';
 });
@@ -57,12 +57,12 @@ document.getElementById('retirarButton').addEventListener('click', function () {
 });
 
 document.getElementById('confirmarRetiro').addEventListener('click', function () {
-    var retirarMonto = parseFloat(document.getElementById('retirarMonto').value);
+    var retirarMonto = parseFloat(document.getElementById('montoRetirar').value);
     var saldoActual = cuentas[cuentaSeleccionada].saldo;
 
     if (saldoActual - retirarMonto >= 10) {
         cuentas[cuentaSeleccionada].saldo -= retirarMonto;
-        document.getElementById('message').innerText = 'Retiraste $' + retirarMonto + '. Tu saldo actual es: $' + cuentas[cuentaSeleccionada].saldo;
+        document.getElementById('messageRetiro').innerText = 'Retiraste $' + retirarMonto + '. Tu saldo actual es: $' + cuentas[cuentaSeleccionada].saldo;
     } else {
         document.getElementById('message').innerText = 'No puedes tener menos de $10 en tu cuenta.';
     }
